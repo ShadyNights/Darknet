@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #dbfcff;
+  --color-on-primary: #00363a;
+  --color-primary-container: #00f0ff;
+  --color-on-primary-container: #006970;
+  --color-primary-fixed: #7df4ff;
+  --color-primary-fixed-dim: #00dbe9;
+
+  --color-secondary: #4edea3;
+  --color-on-secondary: #003824;
+  --color-secondary-container: #00a572;
+  --color-on-secondary-container: #00311f;
+  --color-secondary-fixed: #6ffbbe;
+  --color-secondary-fixed-dim: #4edea3;
+
+  --color-tertiary: #fff3ea;
+  --color-on-tertiary: #472a00;
+  --color-tertiary-container: #ffd19c;
+  --color-on-tertiary-container: #855300;
+  --color-tertiary-fixed: #ffddb8;
+  --color-tertiary-fixed-dim: #ffb95f;
+
+  --color-error: #ffb4ab;
+  --color-on-error: #690005;
+  --color-error-container: #93000a;
+  --color-on-error-container: #ffdad6;
+
+  --color-background: #0f131c;
+  --color-on-background: #dfe2ee;
+
+  --color-surface: #0f131c;
+  --color-on-surface: #dfe2ee;
+  --color-on-surface-variant: #b9cacb;
+  --color-surface-variant: #31353e;
+
+  --color-surface-dim: #0f131c;
+  --color-surface-bright: #353942;
+  --color-surface-container-lowest: #0a0e16;
+  --color-surface-container-low: #181c24;
+  --color-surface-container: #1c2028;
+  --color-surface-container-high: #262a33;
+  --color-surface-container-highest: #31353e;
+
+  --color-outline: #849495;
+  --color-outline-variant: #3b494b;
+
+  --font-headline: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-code: "JetBrains Mono", monospace;
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #0f131c;
+    color: #dfe2ee;
+    font-family: var(--font-body);
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--font-code);
+  }
+
+  h1, h2, h3, h4, .font-headline {
+    font-family: var(--font-headline);
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0e16;
+}
+::-webkit-scrollbar-thumb {
+  background: #262a33;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3b494b;
+}
+
+/* Material symbols utility */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 20;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.material-symbols-outlined.fill-1 {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 20;
+}

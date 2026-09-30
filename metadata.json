@@ -1,0 +1,6 @@
+{
+  "name": "VAJRA-NET Tactical C4I",
+  "description": "Sovereign threat actor de-anonymization and tactical cyber intelligence platform with cryptographic chain-of-custody verification.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
